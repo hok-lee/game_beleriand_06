@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+
+    <!-- My Scripts -->
+    <script src="../class/class_vector.js"></script>
+    <script src="../class/class_mouse.js"></script>
+
+    <script src="../class/class_sprite.js"></script>
+    <script src="../class/class_house.js"></script>
+    <script src="../class/class_fire.js"></script>
+
+    <script src="../class/class_elf.js"></script>
+    <script src="../class/class_wizard.js"></script>
+    <script src="../class/class_ent.js"></script>
+
+    <script src="../class/class_orc.js"></script>
+    <script src="../class/class_balrog.js"></script>
+    <script src="../class/class_spider.js"></script>
+    <script src="../class/class_necromancer.js"></script>
+    <script src="../class/class_tower.js"></script>
+    <script src="../class/class_flare_stationary.js"></script>
+    
+    <script src="../class/class_projectile.js"></script>
+    <script src="../class/class_arrow.js"></script>
+    <script src="../class/class_magic_missile.js"></script>
+    <script src="../class/class_flare.js"></script>
+    
+
+    <script src="../javascript/script_game_beleriand.js" defer></script>
+
+    
+    <script src="../class/helper_user_interaction.js" defer></script>
+
+    
+
+
+    <title>
+        The Wars of Beleriand
+    </title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            The Wars of Beleriand
+        </h1>
+
+        <div style="overflow-x: auto;">
+        
+            <canvas id="id_canvas_game_tower_01">If thou sees not the great towers of Gondolin, thy computer
+                supports not a canvas.</canvas>
+
+        </div>
+
+        <div>
+            <button onclick="make_foe()">Next Wave of Attack</button>
+            <button onclick="restart()">Restart</button>
+            <button id="id_button_toggle_play" onclick="toggle_play()">Pause</button> 
+        </div>
+
+        <div id="id_div_slider">
+            <label for="id_slider_elf">Elves</label>
+            <input type="range" id="id_slider_elf" min="0" max="100" value="20">
+            <span>
+                20
+            </span>
+            <br>
+
+            <label for="id_slider_wizard">Wizards</label>
+            <input type="range" id="id_slider_wizard" min="0" max="50" value="2">
+            <span>
+                2
+            </span>
+            <br>
+
+            <label for="id_slider_ent">Ents</label>
+            <input type="range" id="id_slider_ent" min="0" max="10" value="2">
+            <span>
+                2
+            </span>
+            <br>
+
+
+
+
+
+
+
+
+            <label for="id_slider_orc">Orcs</label>
+            <input type="range" id="id_slider_orc" min="0" max="100" value="10">
+            <span>
+                10
+            </span>
+            <br>
+
+            <label for="id_slider_balrog">Balrogs</label>
+            <input type="range" id="id_slider_balrog" min="0" max="10" value="2">
+            <span>
+                2
+            </span>
+            <br>
+
+            <label for="id_slider_spider">Spiders</label>
+            <input type="range" id="id_slider_spider" min="0" max="10" value="2">
+            <span>
+                2
+            </span>
+            <br>
+
+            <label for="id_slider_necromancer">Necromancers</label>
+            <input type="range" id="id_slider_necromancer" min="0" max="5" value="2">
+            <span>
+                2
+            </span>
+            <br>
+
+        </div>
+
+        
+        <label for="id_checkbox_tower">Tower of Barad-d&ucirc;r</label>
+        <input type="checkbox" id="id_checkbox_tower">
+        <br>
+
+
+    </div>
+
+
+</body>
+
+
+</html>
